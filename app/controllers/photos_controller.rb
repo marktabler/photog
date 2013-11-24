@@ -1,6 +1,7 @@
 class PhotosController < ApplicationController
 
-  before_filter :find_photo, only: [:edit, :show, :update, :destroy]
+  before_filter :find_photo, except: [:new, :create]
+  before_filter :find_album, except: [:new, :show]
 
   def edit
   end
@@ -13,7 +14,7 @@ class PhotosController < ApplicationController
   end
 
   def create
-    @photo = Photo.new(photo_params)
+    @photo = @album.photos.new(photo_params)
     @photo.save!
   end
 
@@ -31,8 +32,12 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
   end
 
+  def find_album
+    @album = Album.find(params[:photo][:album])
+  end
+
   def photo_params
-    params.require(:photo).permit(:name, :image, :album)
+    params.require(:photo).permit(:name, :image)
   end
 
 end
