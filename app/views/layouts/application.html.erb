@@ -11,17 +11,20 @@
   <div id="wrapper">
     <div id="banner">
       <div id="header">
-        <header>ELIZABETH TABLER</header>
+        <header><%= link_to 'ELIZABETH TABLER', root_url %></header>
           <h1>photography</h1>
       </div>
-            <nav>
-              <ul>
-                <li> About </li>
-                <li> Contact </li>
-                <li> Fine Art Prints </li>
-              </ul>
-            </nav>
-    </div>  
+      <nav>
+        <ul>
+          <li> About </li>
+          <li> / </li>
+          <li> Contact </li>
+          <li> / </li>
+          <li> Prints </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="line-separator"></div>  
     <%= yield %>
   </div>
 </body>
