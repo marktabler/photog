@@ -2,12 +2,16 @@ class SessionsController < ApplicationController
   def create
     @user = User.lookup(auth_hash)
     session[:user_id] = @user.id
-    redirect_to '/'
+    return redirect_to albums_path
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to '/'
+    return redirect_to albums_path
+  end
+
+  def echo
+    render text: "#{current_user.try(:id)}"
   end
 
   protected
