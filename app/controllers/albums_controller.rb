@@ -1,4 +1,7 @@
 class AlbumsController < ApplicationController
+
+  before_filter :admin_required, except: [:index, :show]
+
   def new 
     @album = Album.new
   end
