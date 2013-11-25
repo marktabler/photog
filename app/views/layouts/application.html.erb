@@ -5,15 +5,22 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300italic|Merriweather:400,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<header>ELIZABETH TABLER</header>
-<h1>photography</h1>
-  <ul>
-    <li> About </li>
-    <li> Contact </li>
-    <li> Fine Art Prints </li>
-  </ul>
+  <div id="wrapper">
+    <div id="banner">
+      <header>ELIZABETH TABLER</header>
+        <h1>photography</h1>
+          <nav>
+            <ul>
+              <li> About </li>
+              <li> Contact </li>
+              <li> Fine Art Prints </li>
+            </ul>
+          </nav>
+    </div>
+  </div>
 <%= yield %>
 
 </body>

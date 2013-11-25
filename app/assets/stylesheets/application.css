@@ -14,18 +14,31 @@
 
 body {background-color:#000000;}
 
+/* Banner */
+#banner {
+  float: left;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
 header {
   font-size: xx-large;
-  font-family: 'MyriadPro', 'Corbel', Arial, sans-serif; 
-  color: #FFFFFF;
-  size: 18px;  
+  font-family:'Merriweather', serif; 
+  font-style: italic;
+  font-weight: 700;
+  color: white; 
+  display: inline; 
+
 }
 
 h1 {
-  font-family: 'MyriadPro'; 
-  color: #FFFFFF;
-  size: 12px;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 300;
+  font-family: 'Merriweather Sans', sans-serif; 
+  color: white;
+  display: inline;
+  padding-left: 5px;
 }
-
 
 
