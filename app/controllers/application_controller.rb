@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
   end
 
   def admin_required
-    return redirect_to root_path unless current_user && current_user.admin
+    if Rails.env.production?
+      return redirect_to root_path unless current_user && current_user.admin
+    end
   end
 end
