@@ -13,3 +13,19 @@
  */
 
 body {background-color:#000000;}
+
+header {
+  font-size: xx-large;
+  font-family: 'MyriadPro', 'Corbel', Arial, sans-serif; 
+  color: #FFFFFF;
+  size: 18px;  
+}
+
+h1 {
+  font-family: 'MyriadPro'; 
+  color: #FFFFFF;
+  size: 12px;
+}
+
+
+
