@@ -16,6 +16,7 @@ class PhotosController < ApplicationController
   def create
     @photo = @album.photos.new(photo_params)
     @photo.save!
+    redirect_to new_photo_url
   end
 
   def new
