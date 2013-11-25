@@ -2,6 +2,7 @@ class PhotosController < ApplicationController
 
   before_filter :find_photo, except: [:new, :create]
   before_filter :find_album, except: [:new, :show]
+  before_filter :admin_required, except: [:show]
 
   def edit
   end

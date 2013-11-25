@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'omniauth-facebook'
 gem 'carrierwave'
 gem 'fog'
 gem 'unf' # Fog is semi-dependent on this gem; dependency declaration failure
