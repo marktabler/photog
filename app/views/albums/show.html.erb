@@ -8,9 +8,7 @@
 </h2>
 
 <h3>
-  <% @album.photos.each do |photo| %>
-  <%= link_to photo.name, photo %>
-  <% end %>
+  <%= render partial: 'photos/slideshow', locals: { photos: @album.photos } %>
 </h3>  
 
 <%= link_to 'Back to Albums', albums_path %>

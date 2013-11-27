@@ -6,6 +6,15 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300italic|Merriweather:400,700italic' rel='stylesheet' type='text/css'>
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528
+      });
+    });
+  </script>
+  
 </head>
 <body>
   <div id="wrapper">
