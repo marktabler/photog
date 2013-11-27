@@ -110,7 +110,10 @@ footer{
 }
 
 #social_media li {
- 
+  width: 52px;
+  height: 52px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 
