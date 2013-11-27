@@ -1,4 +1,4 @@
 <%= @photo.name %>
 <br>
-<%= image_tag(@photo.image.url) %>
+<%= image_tag(@photo.for_display) %>
 <%= link_to "Back to #{@photo.album.name}", albums_path %>
