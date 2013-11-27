@@ -109,7 +109,8 @@ footer{
   width: 400px;
 }
 
-#social_media ul li {
+#social_media li {
+  padding-left: 10px;
  
 }
 
