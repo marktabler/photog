@@ -1,16 +1,11 @@
 
-<h1> 
-  <%= @album.name %>
-</h1>
-
-<h2>
-  <%= @album.description %>
-</h2>
-
-<h3>
-  <%= render partial: 'photos/slideshow', locals: { photos: @album.photos } %>
-</h3>  
-
-<%= link_to 'Back to Albums', albums_path %>
-
-
+<body>
+  <div id="slidshow">
+    <img>
+      <%= render partial: 'photos/slideshow', locals: { photos: @album.photos } %>
+    </img>
+      <caption><%= @album.name %></caption>
+      <h4> <%= @album.description %> </h4>
+    <link><%= link_to 'Back to Albums', albums_path %></link> 
+  </div
+</body
