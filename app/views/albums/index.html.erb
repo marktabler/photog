@@ -3,8 +3,9 @@
   <%= render partial: 'photos/slideshow', locals: { photos: Album.first.photos } %>
 </p>
 
-
-<% @albums.each do |album| %>
-  <%= link_to(image_tag(album.icon), album) %>
-<% end %>
+<div id="thumbail_link_section">
+  <% @albums.each do |album| %>
+    <%= link_to(image_tag(album.icon, class: "thumbnail"), album) %>
+  <% end %>
+</div>
 

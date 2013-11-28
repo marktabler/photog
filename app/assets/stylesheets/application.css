@@ -97,7 +97,7 @@ header nav li {
   a:link {color:white;}      /* unvisited link */
   a:link { text-decoration: none }
   a:visited {color:white;}  /* visited link */
-  a:hover {background-color:#808080;}  /* mouse over link */
+  /*a:hover {background-color:#808080;}  /* mouse over link */*/
   a:active {color:#black;}  /* selected link */
 
 footer{
