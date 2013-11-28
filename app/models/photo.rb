@@ -4,10 +4,6 @@ class Photo < ActiveRecord::Base
 
   mount_uploader :image, ImageUploader
 
-  def thumbnail
-    image.thumb.url
-  end
-
   def for_display
     image.display.url
   end
