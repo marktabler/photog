@@ -1,6 +1,10 @@
 
-<% @albums.each do |album| %>
-<%= link_to(album.name, album) %>
-<% end %>
+<p>
+  <%= render partial: 'photos/slideshow', locals: { photos: Album.first.photos } %>
+</p>
 
+
+<% @albums.each do |album| %>
+<% link_to(album.name, album) %>
+<% end %>
 

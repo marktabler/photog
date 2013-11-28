@@ -1,6 +1,6 @@
 <div id="slide_nav">
   <% photos.each do |photo| %>
-    <%= image_tag(photo.thumbnail) %>
+    <%= image_tag(photo.for_display) %>
   <% end %>
 </div>
 
@@ -24,8 +24,8 @@
           effect: "slide"
             // [string] Can be either "slide" or "fade".
           },
-        width: 300,
-        height: 300
+        width: 1140,
+        height: 758
       });
     });
   </script>
