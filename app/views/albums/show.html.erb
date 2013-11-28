@@ -1,11 +1,8 @@
+<p>
+  <%= render partial: 'photos/slideshow', locals: { photos: @album.photos } %>
+  <%# render partial: 'photos/slide_nav', locals: { photos: @album.photos } %>
+</p>
 
-<body>
-  <div id="slidshow">
-    <img>
-      <%= render partial: 'photos/slideshow', locals: { photos: @album.photos } %>
-    </img>
-      <caption><%= @album.name %></caption>
-      <h4> <%= @album.description %> </h4>
-    <link><%= link_to 'Back to Albums', albums_path %></link> 
-  </div
-</body
+  <caption><%= @album.name %></caption>
+  <h4> <%= @album.description %> </h4>
+  <%= link_to 'Back to Albums', albums_path %>
