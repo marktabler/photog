@@ -21,6 +21,8 @@ class AlbumsController < ApplicationController
   
   def update
     @album = Album.find(params[:id])
+    @album.update_attributes(albums_params)
+    redirect_to new_photo_path
   end
 
   def edit
@@ -30,7 +32,7 @@ class AlbumsController < ApplicationController
   private
 
   def albums_params
-    params.require(:album).permit(:name, :description)
+    params.require(:album).permit(:name, :description, :image)
   end 
 end
 

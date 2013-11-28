@@ -34,11 +34,11 @@ class ImageUploader < CarrierWave::Uploader::Base
     process :resize_to_fit => [940, 800]
   end
 
-  def process_small?
+  def process_small?(new_file)
     model.class.to_s == "Album"
   end
 
-  def process_display?
+  def process_display?(new_file)
     model.class.to_s == "Photo"
   end
 
