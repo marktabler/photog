@@ -1,11 +1,15 @@
 
-<p>
   <%= render partial: 'photos/slideshow', locals: { photos: Album.first.photos } %>
-</p>
-
-<div id="thumbail_link_section">
+ 
+  <div id="text_background">
+    <div class="row 1">She really, really, really</div>
+    <div class="Name">BETH TABLER</div>
+    <div class="row 3">likes photography</div>  
+  </div>    
+   
+ 
+ <div id="thumbail_link_section">
   <% @albums.each do |album| %>
     <%= link_to(image_tag(album.icon, class: "thumbnail"), album) %>
   <% end %>
-</div>
-
+</div> 

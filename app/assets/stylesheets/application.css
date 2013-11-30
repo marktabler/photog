@@ -16,94 +16,72 @@ body {
   background-color:#000000;
 }
 
-/* Wrapper */
-#wrapper {
-    width: 1140px;
-    margin: 0px auto;
-    height: 1956px;
+/* header */
+#header_background {
+    height: 75px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #38342b;
 }
 
-/* Header */
-header {
-  width: 100%;
-  height: 170px;
+#header_container {
+  width: 1140px;
+  margin: auto;
+  height: 75px; 
+  border-bottom: 3px solid white;
 }
 
-.slabtext {
-  font-size: 120px;
-  font-family:'Merriweather Sans', sans-serif; 
-  font-weight: 700;
-  color: white; 
-  word-spacing: -5px;
-  letter-spacing: 0px;
-}
-
-header h1 {
+#header_container h1 {
   font-size: 30px;
-  font-style: italic;
-  font-weight: 100;
-  font-family: 'Merriweather Sans', sans-serif; 
-  color: #808080;
-  display: inline;
-  padding-left: 15px;
-  padding-top: 20px;
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+  color: white;
+  float: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  text-align: justify;
+  letter-spacing: -2px;
 }
 
-header nav {
+#header_container nav {
   width: 600px;
-  height: 40px;
-  float: left;
+  height: 75px;
+  float: right;
+  padding-top: 35px;
 }
 
-header nav ul {
-  float: left;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-header nav li {
+#header_container nav li {
   display: inline;
   font-size: 20px;
   font-weight: 300;
   font-family: Arial, sans-serif; 
   color: #808080;
-  text-align: right;
-  float: left;
+  float: right;
   padding-right: 5px;
   padding-left: 5px;
 }
 
-.break {
+#header_container.break {
   display: inline;
   font-size: 20px;
   font-weight: 300;
   font-family: 'Merriweather Sans', sans-serif; 
-  color: #808080;
+  color: white;
   text-align: right;
   float: left;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-/*line seperator*/
-.line-separator{
-  height: 1px;
-  background: #717171;
-  border-bottom: 1px solid #808080;
-}
-
-/*links*/
-  a:link {color:white;}      /* unvisited link */
-  a:link { text-decoration: none }
-  a:visited {color:white;}  /* visited link */
-  /*a:hover {background-color:#808080;}  /* mouse over link */*/
-  a:active {color:#black;}  /* selected link */
+/*Footer*/
 
 footer{
   height: 60px;
   bottom: 0;
   width: 1024px;
+  margin: auto;
 }
 
 #social_media {
@@ -154,3 +132,10 @@ button {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 18px;
 }
+
+/*links*/
+  a:link {color:white;}      /* unvisited link */
+  a:link { text-decoration: none }
+  a:visited {color:white;}  /* visited link */
+  /*a:hover {background-color:#808080;}  /* mouse over link */*/
+  a:active {color:#black;}  /* selected link */
