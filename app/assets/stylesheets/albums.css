@@ -1,15 +1,8 @@
-// Place all the styles related to the albums controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-
-
 #slides{
   margin: 0 auto;
   float: left;
   height: 300px;
-  width: 1240px;
+  width: 1140px;
 }
 
 /*text stuff**/
@@ -44,18 +37,18 @@ header h1 {
 img.thumbnail {
   padding-top: 15px;
   display: inline;
-  width: 33%;
+  width: 32%;
   height: 360px;
   filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
+img.thumbnail.center_column {
+  padding: 0 18px
+}
+
 img.thumbnail:hover {
     filter: none;
     -webkit-filter: grayscale(0);
 }
-
-
-
-
