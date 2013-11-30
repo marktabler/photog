@@ -13,14 +13,14 @@
  */
 /* Body */
 body {
-  background-color:#000000;
+  background-color: black;
 }
 
 /* Wrapper */
 #wrapper {
-    width: 1140px;
-    margin: 0px auto;
-    height: 1956px;
+  width: 1140px;
+  margin: 0px auto;
+  height: 1956px;
 }
 
 /* Header */
