@@ -4,8 +4,11 @@
   font-weight: 100;
   font-family: 'Merriweather Sans', sans-serif; 
   color: #808080;
-  display: inline;
-  top: 200px;
+  display: block;
+  background-image:url('Background/menu-halo.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 1500;
 }
 
 
@@ -23,6 +26,7 @@
   margin-bottom: 40px;
   margin-top: 40px;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .thumbnail_container {

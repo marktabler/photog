@@ -26,7 +26,16 @@ body {
 /* Header */
 header {
   height: 170px;
-  padding-bottom: 30px;
+  padding-bottom: 18px;
+}
+
+#halo {
+  width: 100%;
+  z-index: -1;
+  margin: 0px auto;
+  display: inline;
+  float: left;
+  position: absolute;
 }
 
 .slabtext {
@@ -36,6 +45,7 @@ header {
   color: white; 
   word-spacing: -5px;
   letter-spacing: 0px;
+  display: inline;
 }
 
 header h1 {
@@ -47,8 +57,6 @@ header h1 {
   display: inline;
   padding-left: 20px;
   padding-top: 20px;
-  background-image:url('Background/menu-halo.png');
-  background-repeat: no-repeat;
   z-index: 1500;
 }
 
