@@ -25,12 +25,12 @@ body {
 
 /* Header */
 header {
-  width: 100%;
   height: 170px;
+  padding-bottom: 30px;
 }
 
 .slabtext {
-  font-size: 120px;
+  font-size: 105px;
   font-family:'Merriweather Sans', sans-serif; 
   font-weight: 700;
   color: white; 
@@ -45,8 +45,11 @@ header h1 {
   font-family: 'Merriweather Sans', sans-serif; 
   color: #808080;
   display: inline;
-  padding-left: 15px;
+  padding-left: 20px;
   padding-top: 20px;
+  background-image:url('Background/menu-halo.png');
+  background-repeat: no-repeat;
+  z-index: 1500;
 }
 
 header nav {
@@ -89,7 +92,7 @@ header nav li {
 /*line seperator*/
 .line-separator{
   height: 1px;
-  background: #717171;
+  background: #12685D;
   border-bottom: 1px solid #808080;
 }
 
@@ -97,7 +100,7 @@ header nav li {
   a:link {color:white;}      /* unvisited link */
   a:link { text-decoration: none }
   a:visited {color:white;}  /* visited link */
-  /*a:hover {background-color:#808080;}  /* mouse over link */*/
+  a:hover {background-color:none;}  /* mouse over link */*/
   a:active {color:#black;}  /* selected link */
 
 footer{
