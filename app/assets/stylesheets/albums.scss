@@ -1,3 +1,47 @@
+$fancy-font: "nyt-cheltenham",Georgia,serif;
+
+#article_header {
+  background-image: url(asset-path("Background/background_1.jpg"));
+  background-repeat: no-repeat;
+  height: 810px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: right;
+  hgroup {
+    padding: 40px;
+    h1.slabtext {
+      color: #000;
+      font-size: 62px !important;
+      font-family: $fancy-font;
+      font-style: normal;
+      font-weight: 200;
+      letter-spacing: 1px;
+      line-height: 64px !important;  
+      margin: 0;
+    }
+    h2 {
+      color: #666;
+      font-family: $fancy-font;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 26px !important; 
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #album_callout {
   font-size: 30px;
   font-style: italic;
@@ -5,9 +49,6 @@
   font-family: 'Merriweather Sans', sans-serif; 
   color: #808080;
   display: block;
-  background-image:url('Background/menu-halo.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
   z-index: 1500;
 }
 
@@ -38,7 +79,7 @@ p.name {
   bottom: 5px;
   left: 5px;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: lighter;
   font-family: 'Merriweather Sans', sans-serif; 
   color: white;
   display: inline;
@@ -64,3 +105,4 @@ img.thumbnail:hover {
     filter: none;
     -webkit-filter: grayscale(0);
 }
+

@@ -1,8 +1,8 @@
-<div id="slides">
+
   <% photos.each do |photo| %>
-    <%= image_tag(photo.for_display) %>
+    <li><%= image_tag(photo.for_display) %></li>
   <% end %>
-</div>
+
 
 <script>
       $("#slides").slidesjs({
