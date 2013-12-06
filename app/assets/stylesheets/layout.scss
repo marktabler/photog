@@ -1,5 +1,9 @@
+$fancy-font: "nyt-cheltenham",Georgia,serif;
+$less-fancy: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
 body {
-  background-color: black;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -16,19 +20,19 @@ body {
   top: 0;
   width: 1440px;
   z-index: 100000;
-  /*-moz-box-shadow: 0 1px 12px -3px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0 1px 12px -3px rgba(0,0,0,0.3);*/
 }
 
 header h3 {
   border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   cursor: pointer;
   float: left;  
-  font-size: 21px!important;
-  line-height: 21px!important;  
+  font-size: 21px !important;
+  line-height: 21px !important;  
   margin-left: 10px; 
   margin-top: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   width: 278px;
 }
 
@@ -47,22 +51,23 @@ header nav li {
   display: inline;
   float: left;
   font-family: Arial,Verdana,Helvetica,sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   height: 17px;
   line-height: 10px;
   overflow: hidden;
   padding: 2px 6px;
+  padding-left: 5px;
   text-align: left;
   text-transform: uppercase; 
   text-decoration: none;
   width: 60px;
 }
 
-header nav li.selected a {
-  background: #E2E2E2;
-  border-radius: 10px;
-  color: #333;
-}
+header nav li a:hover {
+  background-color: #E2E2E2;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; 
+} 
 
 #social_media {
   height: 22px;
@@ -76,25 +81,22 @@ header nav li.selected a {
   width: 40px;
 }
 
-.social_media:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
-}
-
 /* Wrapper */
 article {
   margin: 45px 0 0;
   padding: 0;
+  background-color: white;
 }
 #wrapper {
   margin: 0 auto;
   width: 1140px;
 }
 
-footer{
+footer {
   bottom: 0;
+  left: 0;
   height: 60px;
-  width: 1024px;
+  width: 1140px;
 }
 
 footer p {
@@ -106,27 +108,6 @@ footer p {
   width: 400px; 
 }
 
-/*.break {
-  display: inline;
-  font-size: 20px;
-  font-weight: 300;
-  font-family: 'Merriweather Sans', sans-serif; 
-  color: #808080;
-  text-align: right;
-  float: left;
-  padding-right: 15px;
-  padding-left: 15px;
-}*/
-
-/*line seperator*/
-/*.line-separator{
-  height: 1px;
-  background: #12685D;
-  border-bottom: 1px solid #808080;
-}*/
-
-
-
 
 /*General Case Styling*/
 
@@ -134,20 +115,20 @@ footer p {
   a:link {color:  black; }      /* unvisited link */
   a:link { text-decoration: none; }
   a:visited {color: black; }   /*visited link */
-  a:hover {background-color: none; }  /* mouse over link */
+  a:hover {background-color: none }  /* mouse over link */
   a:active {color: black; }  /* selected link */
 
 
-/*form {
+form {
   background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
   background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
   position:relative;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: $less-fancy;
   font-size: 18px;
   font-style: italic;
   line-height: 24px;
   font-weight: bold;
-  color: #60DFE5;
+  color: black;
   text-decoration: none;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -156,14 +137,15 @@ footer p {
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-}*/
+}
 
-/*button {
+button {
   padding:5px;
-  background-color: #808080;
+  background-color: black;
   border: 1px solid #666;
   color:#000;
   text-decoration:none;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: $less-fancy;
   font-size: 18px;
-}*/
+}
+
