@@ -7,6 +7,10 @@ Photog::Application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#create'
   get '/sessions/echo', to: 'sessions#echo'
   get '/logout', to: 'sessions#destroy'
+
+  get '/about' => 'static_page#about'
+  get '/contact' => 'static_page#contact'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
