@@ -44,8 +44,8 @@ $less-fancy: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
     font-style: normal;
     font-weight: 200;
     font-size: 35px !important;
-    height: 150px; 
-    margin-top: 85px;
+    height: 110px; 
+    margin-top: 50px;
     margin-left: 50px;
     position: relative;
     quotes: "\201C""\201D""\2018""\2019";
@@ -58,7 +58,7 @@ $less-fancy: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
       margin-right: 0.25em;
       vertical-align: -0.4em;
     }  
-      #nature_quote footer {
+      #tag {
         color: #ccc;
         font-family: $less-fancy;
         font-style: normal;
@@ -74,7 +74,7 @@ $less-fancy: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
 
 article {
   background-color: white;
-  height: 1200px;
+  height: 600px;
   
   #album_callout {
     margin-top: 100px;
@@ -106,22 +106,21 @@ article {
 
 #thumbnail_link_section {
   width: 1140px;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin: 0 auto;
   padding-bottom: 15px;
   padding-top: 15px;
 }
 
 .thumbnail_container {
-  width: 1140px;
+  width: 700px;
   position: relative;
   display: inline;
 }
 
 p.name {
   bottom: 5px;
-  left: 5px;
-  font-size: 20px;
+  left: 22px;
+  font-size: 15px;
   font-weight: lighter;
   font-family: $less-fancy; 
   color: white;
@@ -133,16 +132,16 @@ p.name {
 
 img.thumbnail { 
   display: inline;
-  margin-bottom: 15px;
-  width: 32%;
-  height: 300px;
+  margin: 9px;
+  width: 23%;
+  height: 200px;
   filter: url(filters.svg#grayscale); 
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); 
 }
 
 div.thumbnail_container.center_column {
-  margin: 0 18px 10px;
+  margin: 0 auto;
 }
 
 img.thumbnail:hover {
