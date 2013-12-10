@@ -1,17 +1,29 @@
+<% content_for :article_header do %>
+  <hgroup>
+    <h1 class="slabtext">Beth Tabler</h1>
+    <h2>Photography</h2>
+  </hgroup>
+<% end %>
 
-<p>
-  <%= render partial: 'photos/slideshow', locals: { photos: Album.first.photos } %>
-</p>
-
-<h1 id="album_callout">Galleries</h1>
-<div id="thumbail_link_section">   
-  <% @albums.each_with_index do |album, i| %>
-  <div class="thumbnail_container <%=(i + 2) % 3 == 0 ? 'center_column' : '' %>")>
-    <p class="name"><%= album.name %></p>
-    <%= link_to(image_tag(album.icon, class: "thumbnail"), album) %>
-  </div>
-  <% end %>
+<div id="container">
+  <blockquote id="nature_quote">There are no bad pictures; that's just how your face 
+  looks sometimes.
+    <h4 id = "tag">Abraham Lincoln</h4>
+  </blockquote>
+  <div class="line-separator"></div> 
 </div>
 
 
+<article>
+  <h1 id="album_callout">Galleries</h1>
+  <div id="thumbnail_link_section">   
+    <% @albums.each do |album| %>
+      <div class="thumbnail_container">
+        <p class="name"><%= album.name %></p>
+        <%= link_to(image_tag(album.icon, class: "thumbnail"), album) %>
+      </div>
+    <% end %>
+  </div> 
+</article>
+  
 
