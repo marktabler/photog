@@ -3,8 +3,15 @@
   <%= render partial: 'photos/slideshow', locals: { photos: Album.first.photos } %>
 </p>
 
+<h1 id="album_callout">Galleries</h1>
+<div id="thumbail_link_section">   
+  <% @albums.each_with_index do |album, i| %>
+  <div class="thumbnail_container <%=(i + 2) % 3 == 0 ? 'center_column' : '' %>")>
+    <p class="name"><%= album.name %></p>
+    <%= link_to(image_tag(album.icon, class: "thumbnail"), album) %>
+  </div>
+  <% end %>
+</div>
 
-<% @albums.each do |album| %>
-  <%= link_to(image_tag(album.icon), album) %>
-<% end %>
+
 
