@@ -1,3 +1,75 @@
 // Place all the styles related to the static_page controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$fancy-font: "nyt-cheltenham",Georgia,serif;
+$less-fancy: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
+#header_tag {
+  background-image: url(asset-path("Background/about_background.jpg"));
+  background-repeat: no-repeat;
+  height: 810px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: right; 
+}
+
+#information {
+  background:rgba(255,255,255, 0.6);
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact_tag {
+    color: #000;
+    font-size: 62px !important;
+    font-family: $fancy-font;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 64px !important;  
+    margin-top: 10px;
+    padding-left: 25px;
+    padding-top: 10px;
+    width: 800px;  
+}
+
+#contact_paragraph {
+  color: #333;
+  font-family: $less-fancy;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 26px !important;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 730px;
+}
+
+.link_li {
+  color: black;
+  font-family: $fancy-font;
+  font-size: 20px;
+  height: 40px;
+  line-height: 25px;
+  overflow: hidden;
+  padding-left: 29px;
+  text-align: left; 
+  text-decoration: none;
+}
+
+.link_li a:hover {
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; 
+} 
+
+#face {
+  float: left;
+  margin: 50px;
+}
+

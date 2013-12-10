@@ -16,9 +16,9 @@
 
 <article>
   <h1 id="album_callout">Galleries</h1>
-  <div id="thumbail_link_section">   
-    <% @albums.each_with_index do |album, i| %>
-      <div class="thumbnail_container <%=(i + 2) % 3 == 0 ? 'center_column' : '' %>")>
+  <div id="thumbnail_link_section">   
+    <% @albums.each do |album| %>
+      <div class="thumbnail_container">
         <p class="name"><%= album.name %></p>
         <%= link_to(image_tag(album.icon, class: "thumbnail"), album) %>
       </div>
