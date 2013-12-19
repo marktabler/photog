@@ -14,13 +14,14 @@
 
   <%= f.file_field :image %>
   <br>
-  <% if @album.image %>
-    <%= image_tag @album.image.url %>
+  <% if @album.image.present? %>
+    <%= image_tag(@album.image.url) %>
   <% end %>
   
   <button>
     <%= f.submit =%>
   </button>
 </form>
+  <%= button_to("Delete Album", album_path(@album), method: :delete, confirm: "Are you sure?") if @album.id %>
 
 <% end %>
