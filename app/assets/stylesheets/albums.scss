@@ -2,7 +2,7 @@ $fancy-font: "nyt-cheltenham",Georgia,serif;
 $less-fancy: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 #article_header {
-  background-image: url(asset-path("background/background_1.jpg"));
+  background-image: url(asset-path("background/background.gif"));
   background-repeat: no-repeat;
   height: 810px;
   background-size: cover;
@@ -182,3 +182,7 @@ img.thumbnail:hover {
   text-align: left;
 }
 
+img {
+  width: 940px;
+  height: 625px;
+}
