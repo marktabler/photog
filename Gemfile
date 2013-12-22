@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor'
 gem 'omniauth-facebook'
 gem 'carrierwave'
 gem 'fog'
 gem 'unf' # Fog is semi-dependent on this gem; dependency declaration failure
           # in Fog build. Known issue; valid workaround.
 gem 'mini_magick'
+gem 'unicorn'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
