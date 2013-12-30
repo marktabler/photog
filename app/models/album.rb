@@ -5,5 +5,5 @@ class Album < ActiveRecord::Base
     image.small.url
   end
 
-  has_many :photos
+  has_many :photos, dependent: :destroy
 end

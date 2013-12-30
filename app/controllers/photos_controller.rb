@@ -26,6 +26,7 @@ class PhotosController < ApplicationController
 
   def destroy
     @photo.destroy
+    redirect_to @photo.album
   end
 
   private
@@ -35,7 +36,7 @@ class PhotosController < ApplicationController
   end
 
   def find_album
-    @album = Album.find(params[:photo][:album])
+    find_photo.album
   end
 
   def photo_params
