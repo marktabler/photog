@@ -13,4 +13,11 @@
   <%= f.submit %>
 
 <% end %>
-<%= button_to("Delete Photo", photo_path(@photo), method: :delete, confirm: "Are you sure?") if @photo.id %>
+
+<%= link_to("Delete Photo", @photo, method: :delete, confirm: "Are you sure?") if @photo.id %>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
