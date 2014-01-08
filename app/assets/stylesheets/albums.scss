@@ -13,7 +13,7 @@ $less-fancy: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
     padding: 125px;
 
     h1.slabtext {
-      color: #000;
+      color: #666;
       font-size: 62px !important;
       font-family: $fancy-font;
       font-style: normal;
@@ -37,6 +37,7 @@ $less-fancy: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
   height: 150px; 
   margin: 0 auto;
   position: relative; 
+  padding-top: 50px;
 
   #nature_quote {
     color: #666;
@@ -73,7 +74,7 @@ $less-fancy: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
 }
 
 article {
-  background-color: white;
+  background-color: black;
   height: 600px;
   
   #album_callout {
@@ -81,8 +82,9 @@ article {
     font-size: 30px;
     font-weight: 100;
     font-family: $fancy-font; 
-    color: #333;
+    color: white;
     display: block;
+    letter-spacing: 2px;
   }
 }
 
@@ -103,7 +105,7 @@ article {
 }
 
 #thumbnail_link_section {
-  height: 750px;
+  height: 650px;
   margin: 0 auto;
   padding-bottom: 15px;
   padding-top: 15px;
